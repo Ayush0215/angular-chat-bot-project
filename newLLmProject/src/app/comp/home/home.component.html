@@ -1,0 +1,14 @@
+<div class="formate" *ngIf="showComp">
+  <div class="formate-top">
+    <app-navbar />
+  </div>
+
+  <div class="formate-bottom">
+    <div class="formate-bottom-left"><app-sidenav></app-sidenav></div>
+    <div class="formate-bottom-right">
+      <app-chatbot style="display: contents"></app-chatbot>
+    </div>
+  </div>
+</div>
+
+<app-global-message></app-global-message>

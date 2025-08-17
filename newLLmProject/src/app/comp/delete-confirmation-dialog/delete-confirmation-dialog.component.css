@@ -1,0 +1,19 @@
+.delete--box {
+  padding: 30px 20px;
+}
+.delete--box div {
+  margin: 15px 7px;
+}
+.delete--box div button {
+  color: var(--text-color);
+  padding: 5px 10px;
+}
+.delete--box div button:nth-last-child(1) {
+  color: var(--text-color);
+  background: rgb(189, 4, 4);
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.delete--box div button:hover {
+  background-color: var(--bg-color-hover);
+}

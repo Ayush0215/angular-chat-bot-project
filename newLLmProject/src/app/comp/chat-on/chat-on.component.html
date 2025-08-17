@@ -1,0 +1,67 @@
+<div class="side-nav">
+  <h3><mat-icon>preview</mat-icon> Preview</h3>
+</div>
+<div class="main-box">
+  <div class="close-box">
+    <button routerLink="/home" class="close-btn">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <div
+    class="conversation-container"
+    #conversationContainer
+    (scroll)="onScroll()"
+  >
+    <div *ngIf="error" class="error">
+      {{ error }}
+    </div>
+
+    <div class="conversations">
+      <div
+        *ngFor="let conversation of groupedConversations"
+        class="conversation-group"
+      >
+        <div class="messages">
+          <div
+            *ngFor="let group of conversation.messages"
+            class="message"
+            [ngClass]="group.role"
+          >
+            <div class="message-header">
+              <span class="role">{{ group.role }}</span>
+              <span class="timestamp">{{
+                group.timestamp | date : "medium"
+              }}</span>
+            </div>
+
+            <div
+              *ngIf="group.role === 'assistant'"
+              class="content"
+              [innerHTML]="formatResponse(group.content)"
+            ></div>
+
+            <div *ngIf="group.role !== 'assistant'" class="content">
+              {{ group.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="arrow-btn"
+      *ngIf="showArrowButton"
+      [@showButtonAnimation]="showArrowButton ? 'visible' : 'hidden'"
+    >
+      <button (click)="scrollToBottom()">
+        <mat-icon>keyboard_arrow_down</mat-icon>
+      </button>
+    </div>
+    <div class="loading-box">
+      <div *ngIf="loading" class="loading">Loading...</div>
+      <div *ngIf="!hasMoreData && !loading" class="no-more-data">
+        No more data to load.
+      </div>
+    </div>
+  </div>
+</div>

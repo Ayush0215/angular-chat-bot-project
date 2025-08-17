@@ -1,0 +1,87 @@
+<div
+  class="main-ai-box"
+  [style.marginLeft.px]="marginLeft"
+  role="main"
+  aria-label="Chatbot interface"
+>
+  <!-- Message Display Area -->
+  <div
+    #logContainer
+    class="message-box log-container"
+    aria-live="polite"
+    aria-relevant="additions"
+    aria-atomic="false"
+  >
+    <div
+      *ngFor="let message of messages; let i = index"
+      class="message-container"
+    >
+      <div
+        [ngClass]="{
+          'user-message': message.role === 'user',
+          'assistant-message': message.role === 'assistant'
+        }"
+        [attr.aria-label]="
+          (message.role === 'user' ? 'User' : 'Assistant') +
+          ' message ' +
+          (i + 1)
+        "
+        role="article"
+      >
+        <div [innerHTML]="message.formattedContent || message.content"></div>
+      </div>
+    </div>
+    <!-- <app-chat-on></app-chat-on> -->
+  </div>
+
+  <div class="input-box">
+    <!-- Input Form -->
+    <form (ngSubmit)="sendMessage()" class="input-container">
+      <mat-form-field appearance="outline" class="input-field">
+        <mat-label>Type your message...</mat-label>
+        <textarea
+          matInput
+          [(ngModel)]="userMessage"
+          name="userMessage"
+          id="userMessage"
+          (keydown.enter)="sendMessage(true)"
+          (keydown)="onKeydown($event)"
+          placeholder="Type your message..."
+          aria-label="Message input field"
+          aria-describedby="send-button-description"
+          autofocus
+        ></textarea>
+      </mat-form-field>
+     
+      <!-- Send Button -->
+
+      <div class="button-container">
+        <button
+          mat-raised-button
+          color="primary"
+          class="btn-send"
+          type="submit"
+          [disabled]="isLoading || userMessage.trim() === ''"
+          aria-label="Send message"
+          aria-describedby="send-button-description"
+          onclick="sendMessage()"
+        >
+          <ng-container *ngIf="!isLoading; else loading"> Send </ng-container>
+
+          <ng-template #loading>
+            <div
+              class="dots-container"
+              role="status"
+              aria-live="polite"
+              aria-label="Message sending in progress"
+            >
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </ng-template>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

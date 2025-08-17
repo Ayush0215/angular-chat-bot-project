@@ -1,0 +1,219 @@
+/* Add this in styles.css to make code highlighting visible */
+:host {
+  display: block;
+
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.ai-response-container {
+  max-width: none !important;
+  box-sizing: border-box;
+  transition: width 0.3s ease;
+}
+.main-ai-box {
+  display: flex;
+  flex-direction: column;
+  width: calc(64% - 20px);
+  max-width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 26.8% 10px;
+  box-sizing: border-box;
+  position: relative !important;
+  transition: margin-left 0.3s ease;
+}
+
+.ai-response-container {
+  width: 100% !important;
+  max-width: none !important;
+}
+.log-container {
+  padding: 10px 0px;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.message-box {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-height: 76vh;
+  padding: 5px 0px;
+  margin-bottom: 10px;
+}
+.message-container {
+  padding: 10px 0px;
+}
+
+.user-message {
+  text-align: right;
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 15px;
+}
+.user-message.light-theme {
+  background: #f7f7f7;
+}
+.assistant-message {
+  text-align: left;
+  background: #626363;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--text-color);
+  margin-right: 6px;
+}
+.assistant-message.light-theme {
+  background-color: #f7f7f7;
+}
+.input-field {
+  /* background: teal; */
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 39px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: var(--text-color);
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+.btn-send {
+  padding: 0 5px;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.mat-mdc-form-field {
+  width: 100% !important;
+}
+
+/* Button Styles */
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-container-right {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-send {
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #0056b3;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+  border-radius: 50%;
+  background-color: white;
+  animation: dot-blink 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes dot-blink {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+.code-block {
+  background: black;
+  padding: 0 10px;
+  border-radius: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+.copy-button {
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.copy-button:hover {
+  background: #666;
+}
+.attach-button {
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.attach-button:hover {
+  background-color: #0056b3;
+}
+.input-box {
+  width: 40%;
+  position: fixed;
+  bottom: 15px;
+}

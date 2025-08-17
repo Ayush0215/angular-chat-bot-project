@@ -1,0 +1,47 @@
+<mat-dialog-content class="search-container">
+  <div class="inner-box">
+    <input
+      matInput
+      type="text"
+      [(ngModel)]="searchQuery"
+      placeholder="Search..."
+      autofocus
+      (input)="onSearch()"
+    />
+  </div>
+
+  <!-- Display search results only if the user has typed something -->
+  <div *ngIf="!isLoading && searchResults.length > 0" class="search-results">
+    <div *ngFor="let result of searchResults">
+      <div *ngIf="result.type === 'user'" class="results">
+        <h3>{{ result.title }} <span>User</span></h3>
+      </div>
+      <div *ngIf="result.type === 'model_performance'" class="results">
+        <h3>{{ result.title }} <span> Model Performance</span></h3>
+      </div>
+      <div *ngIf="result.type === 'api_usage'" class="results">
+        <h3>{{ result.title }} <span> API Usage</span></h3>
+      </div>
+      <div *ngIf="result.type === 'profile'" class="results">
+        <h3>{{ result.title }} <span> Profiles </span></h3>
+      </div>
+      <div *ngIf="result.type === 'model_config'" class="results">
+        <h3>{{ result.title }} <span> Model Configuration </span></h3>
+      </div>
+      <div *ngIf="result.type === 'security'" class="results">
+        <h3>{{ result.title }} <span> Security </span></h3>
+        <p>{{ result.description }}</p>
+        <a (click)="navigateTo(result)"> Go To Page </a>
+      </div>
+      <!-- Add more result types as needed -->
+    </div>
+  </div>
+
+  <div class="no-results" *ngIf="searchQuery === ''">
+    <p>Start typing to see results</p>
+  </div>
+
+  <div class="no-results" *ngIf="searchQuery && searchResults.length === 0">
+    <p>No results found</p>
+  </div>
+</mat-dialog-content>

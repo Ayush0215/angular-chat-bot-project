@@ -1,0 +1,39 @@
+.theme-box {
+  box-sizing: border-box;
+}
+.theme-box h2,
+.theme-box mat-dialog-actions button {
+  color: var(--text-color);
+}
+.theme-box mat-dialog-actions .create-class {
+  margin: 0 3px;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in all;
+  background: #007bff;
+}
+.theme-box mat-dialog-actions .create-class:hover {
+  border: 2px solid #007bff;
+  background-color: transparent;
+  background: transparent;
+}
+.theme-box mat-dialog-actions button:hover {
+  background: var(--bg-color-hover);
+}
+/* animation: 2s ease 0s infinite normal none running animation-1p1bzyc; */
+
+/* .create-box {
+  position: relative;
+  display: inline-block;
+}
+
+.create-box::before {
+  animation: 2s ease 0s infinite normal none running animation-1p1bzyc;
+  border-radius: 4px;
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} */

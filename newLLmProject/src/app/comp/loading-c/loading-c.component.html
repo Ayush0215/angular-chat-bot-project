@@ -1,0 +1,26 @@
+<div class="loading-container">
+  <!-- Main spinner container -->
+  <div class="spinner-container">
+    <div class="outer-ring"></div>
+    <div class="inner-ring"></div>
+    <div class="center-dot"></div>
+  </div>
+
+  <!-- Loading text with animated dots -->
+  <div class="loading-text">
+    <span>Loading</span>
+    <div class="dots">
+      <div class="dot" [@dotBounce]="'bouncing'"></div>
+      <div
+        class="dot"
+        [@dotBounce]="'bouncing'"
+        style="animation-delay: 0.2s"
+      ></div>
+      <div
+        class="dot"
+        [@dotBounce]="'bouncing'"
+        style="animation-delay: 0.4s"
+      ></div>
+    </div>
+  </div>
+</div>

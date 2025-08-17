@@ -1,0 +1,30 @@
+<div
+  class="theme-box"
+  aria-live="polite"
+  aria-relevant="additions"
+  aria-atomic="false"
+>
+  <h2 mat-dialog-title>New Conversation</h2>
+  <mat-dialog-content>
+    <mat-form-field appearance="fill" style="width: 100%">
+      <mat-label>Conversation Name</mat-label>
+      <input
+        matInput
+        [(ngModel)]="conversationName"
+        placeholder="Enter conversation name"
+      />
+    </mat-form-field>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button
+      mat-button
+      color="primary"
+      (click)="onSubmit()"
+      [disabled]="!conversationName"
+      class="create-class"
+    >
+      Create
+    </button>
+  </mat-dialog-actions>
+</div>

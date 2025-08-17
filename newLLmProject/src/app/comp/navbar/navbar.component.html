@@ -1,0 +1,89 @@
+<div
+  *ngIf="isLoading && isLoggedIn; else loginTemplate"
+  class="loading-overlay"
+>
+  <div class="text-container">
+    <p class="loading-text">Creating<span class="dots"></span></p>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="navbar-brand">
+    <div class="navigation">
+      <button
+        mat-icon-button
+        (click)="callToggleSidenav()"
+        class="tooltip outer-ico"
+      >
+        <mat-icon>menu</mat-icon>
+        <span class="tooltiptext">Toggle SideNav</span>
+      </button>
+      <button
+        (click)="createNewIndex()"
+        mat-icon-button
+        class="tooltip outer-ico"
+        style="margin: 0"
+      >
+        <mat-icon>chat</mat-icon>
+
+        <span class="tooltiptext"> New Chat </span>
+      </button>
+    </div>
+    <div class="heading">
+      <h1>ChatBot AI</h1>
+    </div>
+  </div>
+
+  <div class="theme-toggle">
+    <button
+      mat-button
+      color="primary"
+      class="outer-ico search-btn"
+      (click)="openSearchDialog()"
+    >
+      <mat-icon>search</mat-icon>
+      <h3 class="key-box">Ctrl-K</h3>
+    </button>
+    <button
+      (click)="toggleTheme()"
+      class="tooltip outer-ico"
+      style="margin-right: 5px"
+    >
+      <mat-icon>
+        {{ currentTheme === "light" ? "dark_mode" : "light_mode" }}
+      </mat-icon>
+      <span class="tooltiptext">change Theme</span>
+    </button>
+
+    <button
+      class="tooltip outer-ico"
+      style="margin: 0px"
+      [matMenuTriggerFor]="profileMenu"
+    >
+      <mat-icon> person </mat-icon>
+      <span class="tooltiptext">Profile</span>
+    </button>
+    <mat-menu #profileMenu="matMenu" class="profile-menu">
+      <button mat-menu-item *ngIf="isLoggedIn" routerLink="/prodashboard">
+        {{ userName }}
+      </button>
+      <button mat-menu-item *ngIf="!isLoggedIn" routerLink="/login">
+        Login
+      </button>
+
+      <button
+        mat-menu-item
+        *ngIf="isLoggedIn && userRole === 'admin'"
+        routerLink="/settings"
+      >
+        Settings
+      </button>
+
+      <button mat-menu-item *ngIf="isLoggedIn" (click)="onLogout()">
+        Logout
+      </button>
+      <!-- Disable Settings button for non-admin users -->
+    </mat-menu>
+  </div>
+  <ng-template #loginTemplate> </ng-template>
+</nav>

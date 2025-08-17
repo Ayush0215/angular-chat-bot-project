@@ -1,0 +1,76 @@
+<!-- <div class="close-box">
+  <button routerLink="/home" class="close-btn">
+    <mat-icon> close </mat-icon>
+  </button>
+</div> -->
+<div class="login-box">
+  <div class="login-form">
+    <form
+      class=""
+      aria-live="polite"
+      aria-relevant="additions"
+      aria-atomic="false"
+    >
+      <h1>Login</h1>
+
+      <mat-form-field appearance="outline" class="input-field">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          [(ngModel)]="email"
+          name="username"
+          placeholder="Enter your Email"
+          required
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input-field">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          [(ngModel)]="password"
+          name="password"
+          [type]="isPasswordVisible ? 'text' : 'password'"
+          placeholder="Enter your password"
+          required
+        />
+        <button
+          mat-icon-button
+          type="button"
+          (click)="togglePasswordVisibility()"
+          class="password-toggle-btn"
+        >
+          <mat-icon>{{
+            isPasswordVisible ? "visibility_off" : "visibility"
+          }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </form>
+    <div class="button-container">
+      <button mat-raised-button class="btn-login tooltip" routerLink="/sign-up">
+        SignUp
+        <span class="tooltiptext">Dont't have an account? Sign up here</span>
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        class="btn-login"
+        type="submit"
+        [disabled]="email.trim() === '' || password.trim() === ''"
+        (click)="onLogin()"
+      >
+        <ng-container *ngIf="!isLoading; else loading"> Login </ng-container>
+
+        <ng-template #loading>
+          <div class="dots-container">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </ng-template>
+      </button>
+    </div>
+  </div>
+</div>
+
+<app-global-message></app-global-message>
