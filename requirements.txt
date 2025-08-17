@@ -4,10 +4,9 @@ httpx
 PyJWT
 python-jose
 pydantic
-pinecone-client
+pinecone
 sentence-transformers
 python-dotenv
 passlib
 PyPDF2
 pymongo
-bson
