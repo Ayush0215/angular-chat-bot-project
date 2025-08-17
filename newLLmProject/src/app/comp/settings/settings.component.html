@@ -1,0 +1,64 @@
+<div class="sign-up-page">
+  <div class="settings-container">
+    <div class="settings-header">
+      <div class="heading">
+        <button>
+          <mat-icon>settings</mat-icon>
+        </button>
+        <h2>Settings</h2>
+      </div>
+      <div class="close-box">
+        <button routerLink="/home" class="close-btn">
+          <mat-icon> close </mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="inner-setting-box">
+    <div class="setting-navbar">
+      <ul>
+        <li>
+          <a
+            routerLink="/settings/setting-dashboard"
+            routerLinkActive="active"
+            [class.active]="isActive('/settings/setting-dashboard')"
+          >
+            <mat-icon>dashboard</mat-icon> Dashboard</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/settings/setting-action"
+            routerLinkActive="active"
+            [class.active]="isActive('/settings/setting-action')"
+          >
+            <mat-icon>settings_accessibility</mat-icon> Action</a
+          >
+        </li>
+
+        <li>
+          <a
+            routerLink="/settings/setting-permission"
+            routerLinkActive="active"
+            [class.active]="isActive('/settings/setting-permission')"
+          >
+            <mat-icon> key </mat-icon> Permission</a
+          >
+        </li>
+
+        <li>
+          <a
+            routerLink="/settings/setting-ai-model"
+            routerLinkActive="active"
+            [class.active]="isActive('/settings/setting-ai-model')"
+          >
+            <mat-icon> model_training </mat-icon> Model Configuration</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="setting-main-div">
+      <router-outlet />
+    </div>
+  </div>
+</div>

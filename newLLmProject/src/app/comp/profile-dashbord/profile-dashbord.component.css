@@ -1,0 +1,44 @@
+.profile-main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.main-box {
+  height: 93vh;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.main-side-nav {
+  width: 13%;
+}
+.main-side-box {
+  width: 87%;
+  padding: 30px;
+}
+.setting-navbar {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 93vh;
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button mat-icon {
+  color: var(--text-color);
+}

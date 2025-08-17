@@ -1,0 +1,90 @@
+<div class="profile-main-box">
+  <div class="nav-bar">
+    <div class="heading">
+      <button>
+        <mat-icon>settings</mat-icon>
+      </button>
+      <h2>Profile Settings</h2>
+    </div>
+    <div class="close-box">
+      <button routerLink="/home" class="close-btn">
+        <mat-icon> close </mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="main-box">
+    <div class="main-side-nav">
+      <div class="setting-navbar">
+        <ul>
+          <li>
+            <a
+              routerLink="/prodashboard/general"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/general')"
+            >
+              <mat-icon>person</mat-icon> General</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/prodashboard/personalization"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/personalization')"
+            >
+              <mat-icon>emoji_people</mat-icon> Personalization</a
+            >
+          </li>
+
+          <li>
+            <a
+              routerLink="/prodashboard/speech"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/speech')"
+            >
+              <mat-icon> speaker_notes </mat-icon> Speech</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/prodashboard/data-controls"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/data-controls')"
+            >
+              <mat-icon> dataset </mat-icon> Data Controls</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/prodashboard/builder-profile"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/builder-profile')"
+            >
+              <mat-icon> badge </mat-icon> Builder Profile</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/prodashboard/connected-apps"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/connected-apps')"
+            >
+              <mat-icon> link </mat-icon> Connected apps</a
+            >
+          </li>
+          <li>
+            <a
+              routerLink="/prodashboard/security"
+              routerLinkActive="active"
+              [class.active]="isActive('/prodashbord/security')"
+            >
+              <mat-icon> verified_user </mat-icon> Security</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-side-box">
+      <router-outlet> </router-outlet>
+    </div>
+  </div>
+</div>

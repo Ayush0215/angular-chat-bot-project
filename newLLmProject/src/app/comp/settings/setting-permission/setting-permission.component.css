@@ -1,0 +1,9 @@
+.action-container {
+  padding: 16px;
+  background: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 83vw;
+  margin-left: 227px;
+  margin-top: 60px;
+}

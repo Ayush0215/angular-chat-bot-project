@@ -1,0 +1,66 @@
+<div class="action">
+  <div class="view-box">
+    <a routerLink="/settings/setting-action">
+      <div class="action__item">
+        <h2>
+          Total Credentials <span>{{ accountCount }}</span>
+        </h2>
+      </div>
+    </a>
+    <div class="action__item">
+      <h2>
+        Admin Credentials <span>{{ adminCount }}</span>
+      </h2>
+    </div>
+    <div class="action__item">
+      <h2>
+        Employee Credentials <span>{{ employee }}</span>
+      </h2>
+    </div>
+  </div>
+  <div class="action-container">
+    <div class="api-usage-container">
+      <h2>API Usage Analytics</h2>
+
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+
+      <table
+        mat-table
+        [dataSource]="apiUsageData"
+        class="mat-elevation-z8"
+        *ngIf="!isLoading"
+      >
+        <!-- User ID Column -->
+        <ng-container matColumnDef="user_id">
+          <th mat-header-cell *matHeaderCellDef>User ID</th>
+          <td mat-cell *matCellDef="let element">{{ element.user_id }}</td>
+        </ng-container>
+
+        <!-- Model Name Column -->
+        <ng-container matColumnDef="model_name">
+          <th mat-header-cell *matHeaderCellDef>Model Name</th>
+          <td mat-cell *matCellDef="let element">{{ element.model_name }}</td>
+        </ng-container>
+
+        <!-- Request Count Column -->
+        <ng-container matColumnDef="request_count">
+          <th mat-header-cell *matHeaderCellDef>Requests</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.request_count }}
+          </td>
+        </ng-container>
+
+        <!-- Timestamp Column -->
+        <ng-container matColumnDef="timestamp">
+          <th mat-header-cell *matHeaderCellDef>Timestamp</th>
+          <td mat-cell *matCellDef="let element">
+            {{ element.timestamp | date : "medium" }}
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </div>
+</div>

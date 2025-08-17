@@ -1,0 +1,126 @@
+.config-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px;
+
+  .full-width {
+    width: 100%;
+  }
+
+  .slider-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+  form {
+    display: grid !important;
+    padding: 21px 40px !important;
+  }
+  label {
+    font-weight: bold;
+    color: #333;
+    flex: 1;
+  }
+
+  mat-slider {
+    flex: 3;
+  }
+
+  .input-box {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+  }
+}
+
+.action-buttons {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cancel-btn {
+  color: #777;
+}
+
+.action-box {
+  padding: 27px 16px !important;
+  background: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 81vw;
+  max-width: 100vw;
+  margin-left: 244px;
+  margin-top: 73px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px var(--box-shadow-color);
+  position: relative;
+  z-index: 1;
+  transition: 0.5s ease-in-out all;
+}
+.action-box:hover {
+  box-shadow: var(--box-shadow-color-first-hover) 0px 13px 27px -5px,
+    var(--box-shadow-color-second-hover) 0px 8px 16px -8px;
+}
+mat-form-field {
+  width: 100%;
+  color: var(--text-color);
+}
+.mat-mdc-select-min-line {
+  color: var(--text-color) !important;
+}
+button {
+  border-radius: 5px;
+  color: var(--text-color) !important;
+  background-color: var(--primary-color) !important;
+  transition: 0.3s ease-in-out all;
+}
+button:hover {
+  background-color: var(--icon-color-hover) !important;
+  color: var(--bg-color) !important;
+}
+.cancel-btn {
+  background-color: var(--icon-color-hover) !important;
+  color: var(--bg-color) !important;
+}
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.selected-option {
+  font-weight: bold;
+  background-color: #d1e7fd !important; /* Highlight selected option */
+}
+
+mat-slider {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tick-mark {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  display: inline-block;
+}
+.custom-slider {
+  margin: 0 8px;
+  width: calc(100% - 16px);
+}
+.mat-mdc-slider {
+  width: 100%;
+}
+.input-field-none {
+  width: 100%;
+}
+.input-css {
+  color: var(--text-color) !important;
+}

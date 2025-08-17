@@ -1,0 +1,57 @@
+.connected-apps {
+  height: 88vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.connected-app-item {
+  /* background: #184c4c; */
+  padding: 15px;
+  /* border-bottom: 1px solid; */
+  border-radius: 15px;
+  height: 500px;
+  width: 100%;
+}
+.heading {
+  border-bottom: 1px solid;
+  margin-bottom: 16px;
+}
+.heading h3 {
+  padding-bottom: 16px;
+}
+.apps-box {
+  border-bottom: 1px solid;
+  margin-bottom: 16px;
+}
+.apps-box mat-icon,
+.apps-box h5 {
+  padding: 0px 10px 0px 0px;
+  margin-bottom: 16px;
+}
+.inner-apps-section {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.link-box {
+  padding: 60px 0px;
+}
+.inner-apps-section-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inner-apps-section-right button {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 25px;
+  color: var(--text-color);
+  transition: 0.5s all ease-in-out;
+}
+.inner-apps-section-right button:hover {
+  background-color: var(--primary-color-hover);
+  border: transparent;
+  color: white;
+}

@@ -1,0 +1,111 @@
+.sidenav {
+  max-height: 100vh;
+  height: 100vh;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  overflow-x: hidden;
+  border-right: 2px solid var(--text-color);
+  transition: width 0.3s ease;
+
+  border-radius: 0px 10px 10px 0px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  color: var(--text-color);
+  z-index: 999;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.sidenav.sidenav.light-theme {
+  border-color: #2e2e2e;
+}
+button {
+  padding: 10px 5px !important;
+}
+.content {
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Smooth transition for content visibility */
+  padding: 6px; /* Inner padding */
+}
+
+.sidenav[style="width: 1px"] .content {
+  opacity: 0; /* Hide content when width is 1px */
+  pointer-events: none; /* Disable interactions when hidden */
+  box-sizing: border-box;
+}
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: #636363;
+}
+.delete-btn {
+  margin-left: 4px;
+  background: none;
+  border: none;
+  color: var(--text-color) !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn:hover {
+  color: var(--primary-color-hover) !important;
+}
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9998; /* Ensure it's on top */
+}
+
+.loading-spinner span {
+  padding: 30px;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.7);
+  color: azure !important;
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #161515c2;
+  height: 100%;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  background-color: #4d4a4a;
+}
+.mat-mdc-menu-panel {
+  overflow-y: hidden !important;
+}
+.profile-menu {
+  display: flex !important;
+  flex-direction: column !important;
+}

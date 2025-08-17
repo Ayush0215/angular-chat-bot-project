@@ -1,0 +1,47 @@
+<div *ngIf="isLoading" class="loading-overlay">
+  <div class="text-container">
+    <p class="loading-text">Deleting<span class="dots"></span></p>
+  </div>
+</div>
+
+<div class="sidenav" [style.width.px]="sidenavWidth">
+  <div class="content" *ngIf="isSidenavVisible">
+    <p class="heading">Recent</p>
+    <ul>
+      <li
+        *ngFor="let index of indexes"
+        (click)="setCurrentIndex(index)"
+        [class.active]="index === currentIndex"
+      >
+        <div class="index">
+          {{ index }}
+        </div>
+        <div class="button">
+          <button
+            class="tooltip delete-btn"
+            style="margin: 0px"
+            [matMenuTriggerFor]="profileMenu"
+          >
+            <mat-icon> more_horiz </mat-icon>
+            <span class="tooltiptext">More Option</span>
+          </button>
+          <mat-menu #profileMenu="matMenu" class="profile-menu">
+            <button routerLink="/preview-con" class="delete-btn">
+              <mat-icon>preview</mat-icon>
+              <span> Preview </span>
+            </button>
+
+            <button
+              class="delete-btn"
+              mat-icon-button
+              (click)="setIndexForDeletion(currentIndex); openDeleteDialog()"
+            >
+              <mat-icon>delete</mat-icon>
+              <span>Delete</span>
+            </button>
+          </mat-menu>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

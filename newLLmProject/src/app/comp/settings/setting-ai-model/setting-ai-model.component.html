@@ -1,0 +1,173 @@
+<div class="action-box">
+  <h2 mat-dialog-title>Update Model Configuration</h2>
+
+  <mat-dialog-content>
+    <form
+      class="model-config-form"
+      aria-live="polite"
+      aria-relevant="additions"
+      aria-atomic="false"
+      style="display: grid; padding: 21px 40px"
+    >
+      <!-- Model Name Selection (unchanged) -->
+      <mat-form-field appearance="outline" class="input-field-none">
+        <mat-label>Model Name</mat-label>
+        <mat-select
+          name="model_name"
+          [(ngModel)]="modelConfig.model_name"
+          required
+          #modelName="ngModel"
+        >
+          <mat-option
+            *ngFor="let model of availableModels"
+            [value]="model"
+            [ngClass]="{ 'selected-model': model === modelConfig.model_name }"
+          >
+            <span>{{ model }}</span>
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="modelName.invalid && modelName.touched">
+          Model Name is required
+        </mat-error>
+      </mat-form-field>
+
+      <!-- Temperature -->
+      <div class="slider-group">
+        <mat-form-field appearance="outline" class="input-field-none">
+          <mat-label>Temperature</mat-label>
+          <input
+            matInput
+            type="number"
+            name="temperature"
+            placeholder="0.0 - 2.0"
+            [(ngModel)]="modelConfig.temperature"
+            (ngModelChange)="validateTemperature()"
+            min="0"
+            max="2"
+            step="0.01"
+            required
+            #temperature="ngModel"
+            class="input-css"
+          />
+          <mat-error *ngIf="temperature.invalid && temperature.touched">
+            Temperature must be between 0 and 2
+          </mat-error>
+        </mat-form-field>
+        <mat-slider
+          class="custom-slider"
+          [min]="0"
+          [max]="2"
+          [step]="0.01"
+          [discrete]="true"
+        >
+          <input
+            matSliderThumb
+            [(ngModel)]="modelConfig.temperature"
+            (ngModelChange)="validateTemperature()"
+            name="temperatureSlider"
+          />
+        </mat-slider>
+      </div>
+
+      <!-- Max Tokens -->
+      <div class="slider-group">
+        <mat-form-field appearance="outline" class="input-field-none">
+          <mat-label>Max Tokens</mat-label>
+          <input
+            matInput
+            type="number"
+            name="max_tokens"
+            placeholder="1 - 131072"
+            [(ngModel)]="modelConfig.max_tokens"
+            (ngModelChange)="validateTokens()"
+            min="1"
+            max="131072"
+            step="1"
+            required
+            #maxTokens="ngModel"
+            class="input-css"
+          />
+          <mat-error *ngIf="maxTokens.invalid && maxTokens.touched">
+            Max Tokens must be between 1 and 131072
+          </mat-error>
+        </mat-form-field>
+        <mat-slider
+          class="custom-slider"
+          [min]="1"
+          [max]="131072"
+          [step]="1"
+          [discrete]="true"
+        >
+          <input
+            matSliderThumb
+            [(ngModel)]="modelConfig.max_tokens"
+            (ngModelChange)="validateTokens()"
+            name="maxTokensSlider"
+          />
+        </mat-slider>
+      </div>
+
+      <!-- Top P -->
+      <div class="slider-group">
+        <mat-form-field appearance="outline" class="input-field-none">
+          <mat-label>Top P</mat-label>
+          <input
+            matInput
+            type="number"
+            name="top_p"
+            placeholder="0.0 - 1.0"
+            [(ngModel)]="modelConfig.top_p"
+            (ngModelChange)="validateTopP()"
+            min="0"
+            max="1"
+            step="0.01"
+            required
+            #topP="ngModel"
+            class="input-css"
+          />
+          <mat-error *ngIf="topP.invalid && topP.touched">
+            Top P must be between 0 and 1
+          </mat-error>
+        </mat-form-field>
+        <mat-slider
+          class="custom-slider"
+          [min]="0"
+          [max]="1"
+          [step]="0.01"
+          [discrete]="true"
+        >
+          <input
+            matSliderThumb
+            [(ngModel)]="modelConfig.top_p"
+            (ngModelChange)="validateTopP()"
+            name="topPSlider"
+          />
+        </mat-slider>
+      </div>
+
+      <!-- Status Selection (unchanged) -->
+      <mat-form-field appearance="outline" class="input-field-none">
+        <mat-label>Status</mat-label>
+        <mat-select
+          name="status"
+          [(ngModel)]="modelConfig.status"
+          required
+          #status="ngModel"
+        >
+          <mat-option value="active">Active</mat-option>
+          <mat-option value="inactive">Inactive</mat-option>
+        </mat-select>
+        <mat-error *ngIf="status.invalid && status.touched">
+          Status is required
+        </mat-error>
+      </mat-form-field>
+    </form>
+  </mat-dialog-content>
+
+  <div class="button-div">
+    <button class="action-buttons" mat-raised-button (click)="saveConfig()">
+      Save
+    </button>
+  </div>
+</div>
+<app-global-message></app-global-message>

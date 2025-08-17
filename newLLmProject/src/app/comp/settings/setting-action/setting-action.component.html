@@ -1,0 +1,60 @@
+<div class="action-box">
+  <div class="action-container">
+    <h2>Action Table</h2>
+    <div class="add-button">
+      <button
+        mat-raised-button
+        color="primary"
+        class="add_cred"
+        (click)="openDialog()"
+      >
+        <mat-icon aria-label="Add credentials icon">add</mat-icon>
+        Add Credentials
+      </button>
+    </div>
+    <table class="mat-elevation-z8 action-table">
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Type</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let element of data">
+        <tr>
+          <td>{{ element.userName }}</td>
+          <td>{{ element.email }}</td>
+          <td>
+            <span class="password-mask">
+              {{ element.password }}
+            </span>
+          </td>
+          <td>{{ element.type }}</td>
+
+          <td class="action-buttons">
+            <button
+              mat-raised-button
+              class="action-btn tooltip"
+              (click)="openEditDialog(element)"
+            >
+              <mat-icon>edit</mat-icon>
+              <span class="tooltiptext"> Edit </span>
+            </button>
+
+            <button
+              mat-raised-button
+              class="delete tooltip"
+              (click)="openDeleteDialog(element.Uid)"
+            >
+              <mat-icon>delete</mat-icon>
+              <span class="tooltiptext"> Delete </span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-global-message></app-global-message>
