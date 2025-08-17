@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+httpx
+PyJWT
+python-jose
+pydantic
+pinecone-client
+sentence-transformers
+python-dotenv
+passlib
+PyPDF2
+pymongo
+bson
