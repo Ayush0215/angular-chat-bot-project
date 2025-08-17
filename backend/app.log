@@ -1,0 +1,121 @@
+2025-01-29 10:52:05,157 - app - INFO - Environment variables loaded
+2025-01-29 10:52:05,158 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 10:52:05,160 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 10:52:05,161 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 10:52:05,201 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 10:52:05,201 - app - INFO - Pinecone initialized
+2025-01-29 10:52:05,204 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 10:52:05,206 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 10:52:08,896 - app - INFO - Sentence transformer model initialized
+2025-01-29 10:54:05,983 - app - INFO - Environment variables loaded
+2025-01-29 10:54:05,984 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 10:54:05,986 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 10:54:05,987 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 10:54:06,022 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 10:54:06,023 - app - INFO - Pinecone initialized
+2025-01-29 10:54:06,025 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 10:54:06,025 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 10:54:11,712 - app - INFO - Sentence transformer model initialized
+2025-01-29 10:55:03,284 - app - INFO - Environment variables loaded
+2025-01-29 10:55:03,285 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 10:55:03,287 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 10:55:03,288 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 10:55:03,318 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 10:55:03,318 - app - INFO - Pinecone initialized
+2025-01-29 10:55:03,321 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 10:55:03,321 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 10:55:07,688 - app - INFO - Sentence transformer model initialized
+2025-01-29 10:57:17,144 - app - INFO - Environment variables loaded
+2025-01-29 10:57:17,145 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 10:57:17,148 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 10:57:17,148 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 10:57:17,179 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 10:57:17,180 - app - INFO - Pinecone initialized
+2025-01-29 10:57:17,182 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 10:57:17,182 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 10:57:21,712 - app - INFO - Sentence transformer model initialized
+2025-01-29 10:57:31,732 - app - INFO - Environment variables loaded
+2025-01-29 10:57:31,733 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 10:57:31,736 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 10:57:31,737 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 10:57:31,767 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 10:57:31,767 - app - INFO - Pinecone initialized
+2025-01-29 10:57:31,769 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 10:57:31,769 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 10:57:36,901 - app - INFO - Sentence transformer model initialized
+2025-01-29 10:59:06,742 - app - INFO - Environment variables loaded
+2025-01-29 10:59:06,743 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 10:59:06,745 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 10:59:06,745 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 10:59:06,780 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 10:59:06,781 - app - INFO - Pinecone initialized
+2025-01-29 10:59:06,785 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 10:59:06,785 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 10:59:11,278 - app - INFO - Sentence transformer model initialized
+2025-01-29 10:59:11,286 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "message": "Starting topology monitoring"}
+2025-01-29 10:59:11,287 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "previousDescription": "<TopologyDescription id: 6799bca7c46d2413af152bfd, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 6799bca7c46d2413af152bfd, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-01-29 10:59:11,287 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "serverHost": "localhost", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-01-29 10:59:11,288 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bca7c46d2413af152bfd"}, "message": "Connection pool created", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 10:59:11,291 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "driverConnectionId": 1, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-01-29 10:59:11,292 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "driverConnectionId": 1, "serverConnectionId": 12, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "durationMS": 0.0, "reply": "{\"helloOk\": true, \"ismaster\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"67999ae32342f7dc0fa5ad62\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-01-29T05:29:11.292Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 12, \"maxWireVersion\": 25, \"ok\": 1.0}", "message": "Server heartbeat succeeded"}
+2025-01-29 10:59:11,293 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bca7c46d2413af152bfd"}, "message": "Connection pool ready", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 10:59:11,294 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "previousDescription": "<TopologyDescription id: 6799bca7c46d2413af152bfd, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 6799bca7c46d2413af152bfd, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "message": "Topology description changed"}
+2025-01-29 10:59:11,301 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "driverConnectionId": 1, "serverConnectionId": 12, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-01-29 10:59:11,805 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bca7c46d2413af152bfd"}, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "durationMS": 516.0000000014406, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-01-29 11:00:09,634 - app - INFO - Environment variables loaded
+2025-01-29 11:00:09,635 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 11:00:09,637 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 11:00:09,638 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 11:00:09,667 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 11:00:09,669 - app - INFO - Pinecone initialized
+2025-01-29 11:00:09,671 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 11:00:09,671 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 11:00:13,312 - app - INFO - Sentence transformer model initialized
+2025-01-29 11:00:13,319 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "message": "Starting topology monitoring"}
+2025-01-29 11:00:13,320 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "previousDescription": "<TopologyDescription id: 6799bce5bdd6bc5464959c37, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 6799bce5bdd6bc5464959c37, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-01-29 11:00:13,320 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "serverHost": "localhost", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-01-29 11:00:13,321 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bce5bdd6bc5464959c37"}, "message": "Connection pool created", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 11:00:13,324 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "driverConnectionId": 1, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-01-29 11:00:13,326 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "driverConnectionId": 1, "serverConnectionId": 14, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "durationMS": 0.0, "reply": "{\"helloOk\": true, \"ismaster\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"67999ae32342f7dc0fa5ad62\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-01-29T05:30:13.326Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 14, \"maxWireVersion\": 25, \"ok\": 1.0}", "message": "Server heartbeat succeeded"}
+2025-01-29 11:00:13,326 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bce5bdd6bc5464959c37"}, "message": "Connection pool ready", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 11:00:13,327 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "previousDescription": "<TopologyDescription id: 6799bce5bdd6bc5464959c37, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 6799bce5bdd6bc5464959c37, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "message": "Topology description changed"}
+2025-01-29 11:00:13,329 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "driverConnectionId": 1, "serverConnectionId": 14, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-01-29 11:00:13,839 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bce5bdd6bc5464959c37"}, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "durationMS": 515.9999999996217, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-01-29 11:01:19,333 - app - INFO - Environment variables loaded
+2025-01-29 11:01:19,334 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 11:01:19,336 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 11:01:19,337 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 11:01:19,363 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 11:01:19,363 - app - INFO - Pinecone initialized
+2025-01-29 11:01:19,365 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 11:01:19,367 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 11:01:23,305 - app - INFO - Sentence transformer model initialized
+2025-01-29 11:01:23,314 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "message": "Starting topology monitoring"}
+2025-01-29 11:01:23,314 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "previousDescription": "<TopologyDescription id: 6799bd2b515ab078f40d4ddb, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 6799bd2b515ab078f40d4ddb, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-01-29 11:01:23,315 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "serverHost": "localhost", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-01-29 11:01:23,317 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "message": "Connection pool created", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 11:01:23,319 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "driverConnectionId": 1, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-01-29 11:01:23,321 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "driverConnectionId": 1, "serverConnectionId": 16, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "durationMS": 0.0, "reply": "{\"helloOk\": true, \"ismaster\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"67999ae32342f7dc0fa5ad62\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-01-29T05:31:23.321Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 16, \"maxWireVersion\": 25, \"ok\": 1.0}", "message": "Server heartbeat succeeded"}
+2025-01-29 11:01:23,323 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "message": "Connection pool ready", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 11:01:23,323 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "previousDescription": "<TopologyDescription id: 6799bd2b515ab078f40d4ddb, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 6799bd2b515ab078f40d4ddb, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "message": "Topology description changed"}
+2025-01-29 11:01:23,326 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "driverConnectionId": 1, "serverConnectionId": 16, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-01-29 11:01:23,835 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd2b515ab078f40d4ddb"}, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "durationMS": 515.9999999996217, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-01-29 11:02:35,929 - app - INFO - Environment variables loaded
+2025-01-29 11:02:35,929 - app - INFO - FastAPI application and CORS middleware initialized
+2025-01-29 11:02:35,931 - pinecone_plugin_interface.logging - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\ayush\\miniconda3\\Lib\\site-packages\\pinecone_plugins'])
+2025-01-29 11:02:35,932 - pinecone_plugin_interface.logging - INFO - Looking for plugins in pinecone_plugins.inference
+2025-01-29 11:02:35,966 - pinecone_plugin_interface.logging - INFO - Installing plugin inference into Pinecone
+2025-01-29 11:02:35,967 - app - INFO - Pinecone initialized
+2025-01-29 11:02:35,970 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-01-29 11:02:35,971 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: BAAI/bge-large-en-v1.5
+2025-01-29 11:02:40,773 - app - INFO - Sentence transformer model initialized
+2025-01-29 11:02:40,781 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "message": "Starting topology monitoring"}
+2025-01-29 11:02:40,782 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "previousDescription": "<TopologyDescription id: 6799bd7873d6b08d11caa3db, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 6799bd7873d6b08d11caa3db, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-01-29 11:02:40,782 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "serverHost": "localhost", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-01-29 11:02:40,784 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bd7873d6b08d11caa3db"}, "message": "Connection pool created", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 11:02:40,786 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "driverConnectionId": 1, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-01-29 11:02:40,788 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "driverConnectionId": 1, "serverConnectionId": 18, "serverHost": "localhost", "serverPort": 27017, "awaited": false, "durationMS": 0.0, "reply": "{\"helloOk\": true, \"ismaster\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"67999ae32342f7dc0fa5ad62\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-01-29T05:32:40.788Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 18, \"maxWireVersion\": 25, \"ok\": 1.0}", "message": "Server heartbeat succeeded"}
+2025-01-29 11:02:40,789 - pymongo.connection - DEBUG - {"clientId": {"$oid": "6799bd7873d6b08d11caa3db"}, "message": "Connection pool ready", "serverHost": "localhost", "serverPort": 27017}
+2025-01-29 11:02:40,789 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "previousDescription": "<TopologyDescription id: 6799bd7873d6b08d11caa3db, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 6799bd7873d6b08d11caa3db, topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "message": "Topology description changed"}
+2025-01-29 11:02:40,791 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "driverConnectionId": 1, "serverConnectionId": 18, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-01-29 11:02:41,295 - pymongo.topology - DEBUG - {"topologyId": {"$oid": "6799bd7873d6b08d11caa3db"}, "serverHost": "localhost", "serverPort": 27017, "awaited": true, "durationMS": 500.0, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
