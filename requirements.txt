@@ -10,3 +10,4 @@ python-dotenv
 passlib
 PyPDF2
 pymongo
+python-multipart
